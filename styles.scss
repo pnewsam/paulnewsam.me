@@ -1,3 +1,8 @@
+@import "./node_modules/bulma/sass/utilities/initial-variables";
+
+$my-sin: #FDB342;
+$primary: $my-sin;
+
 @import "./node_modules/bulma/sass/utilities/_all";
 
 $raleway: 'Raleway', sans-serif;
@@ -6,14 +11,28 @@ $body-family: $roboto;
 $body-size: 20px;
 
 @import "./node_modules/bulma/sass/base/_all";
+@import "./node_modules/bulma/sass/components/card";
+@import "./node_modules/bulma/sass/components/level";
 @import "./node_modules/bulma/sass/components/navbar";
-@import "./node_modules/bulma/sass/elements/title";
+@import "./node_modules/bulma/sass/elements/button";
+@import "./node_modules/bulma/sass/elements/icon";
+@import "./node_modules/bulma/sass/elements/image";
 @import "./node_modules/bulma/sass/elements/container";
+@import "./node_modules/bulma/sass/elements/title";
 @import "./node_modules/bulma/sass/grid/_all";
 @import "./node_modules/bulma/sass/layout/_all";
 
 .title {
-  &.is-1, &.is-2 {
+  &.is-1 {
+    font-family: $raleway;
+  }
+  &.is-5 {
+    font-weight: lighter;
+  }
+}
+
+.subtitle {
+  &.is-2 {
     font-family: $raleway;
   }
 }
@@ -24,4 +43,35 @@ i[class^="devicon"] {
 
 section:nth-of-type(even) {
   background-color: $background;
+}
+
+.icon.is-large {
+  margin: 0 10px;
+ .fa {
+  font-size: 60px;
+ }
+ a {
+   color: $grey-darker;
+   &:hover {
+     color: $grey;
+   }
+ }
+}
+
+.contact {
+  background-color: $background;
+}
+
+.footer {
+  background-color: $grey-darker;
+  color: white;
+}
+
+.filter {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: $grey-darker;
+  z-index: 2;
+  opacity: .5;
 }
