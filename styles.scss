@@ -65,13 +65,28 @@ section:nth-of-type(even) {
 .footer {
   background-color: $grey-darker;
   color: white;
+  a:hover {
+    color: darken($primary, 30%);
+  }
 }
 
-.filter {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: $grey-darker;
-  z-index: 2;
-  opacity: .5;
+.past-projects {
+  .past-projects__filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $primary;
+    z-index: 2;
+    opacity: .7;
+    a {
+      z-index: 3;
+    }
+  }
+ .past-projects__image {
+   filter: grayscale(1) contrast(.3) blur(.5px) brightness(1.2);
+ }
+}
+
+.hide {
+  display: none;
 }

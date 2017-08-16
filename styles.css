@@ -3272,13 +3272,22 @@ section:nth-of-type(even) {
 .footer {
   background-color: #363636;
   color: white; }
+  .footer a:hover {
+    color: #a46402; }
 
-.filter {
+.past-projects .past-projects__filter {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #363636;
+  background-color: #FDB342;
   z-index: 2;
-  opacity: .5; }
+  opacity: .7; }
+  .past-projects .past-projects__filter a {
+    z-index: 3; }
+.past-projects .past-projects__image {
+  filter: grayscale(1) contrast(0.3) blur(0.5px) brightness(1.2); }
+
+.hide {
+  display: none; }
 
 /*# sourceMappingURL=styles.css.map */
