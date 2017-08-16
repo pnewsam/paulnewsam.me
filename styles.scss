@@ -10,6 +10,8 @@ $roboto: 'Roboto', sans-serif;
 $body-family: $roboto;
 $body-size: 20px;
 
+$card-shadow: 0 4px 4px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.2);
+
 @import "./node_modules/bulma/sass/base/_all";
 @import "./node_modules/bulma/sass/components/card";
 @import "./node_modules/bulma/sass/components/level";

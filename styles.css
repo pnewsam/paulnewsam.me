@@ -726,7 +726,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 
 .card {
   background-color: white;
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 4px 4px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.2);
   color: #4a4a4a;
   max-width: 100%;
   position: relative; }
@@ -3498,7 +3498,7 @@ section:nth-of-type(even) {
     color: white; }
 
 .current-project__image {
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1); }
+  box-shadow: 0 4px 4px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.2); }
 
 .past-projects .past-projects__filter {
   position: absolute;
