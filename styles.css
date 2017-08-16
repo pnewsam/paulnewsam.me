@@ -3252,7 +3252,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
   font-family: "Raleway", sans-serif; }
 
 i[class^="devicon"] {
-  font-size: 3em; }
+  font-size: 3rem; }
 
 section:nth-of-type(even) {
   background-color: whitesmoke; }
@@ -3260,7 +3260,7 @@ section:nth-of-type(even) {
 .icon.is-large {
   margin: 0 10px; }
   .icon.is-large .fa {
-    font-size: 60px; }
+    font-size: 3rem; }
   .icon.is-large a {
     color: #363636; }
     .icon.is-large a:hover {
@@ -3275,6 +3275,18 @@ section:nth-of-type(even) {
   .footer a:hover {
     color: #a46402; }
 
+.navbar .navbar-burger span {
+  background-color: #FDB342; }
+.navbar .navbar-burger:hover {
+  background-color: #FDB342; }
+  .navbar .navbar-burger:hover span {
+    background-color: white; }
+.navbar .navbar-item {
+  color: #FDB342; }
+  .navbar .navbar-item:hover {
+    background-color: #FDB342;
+    color: white; }
+
 .past-projects .past-projects__filter {
   position: absolute;
   height: 100%;
@@ -3286,6 +3298,9 @@ section:nth-of-type(even) {
     z-index: 3; }
 .past-projects .past-projects__image {
   filter: grayscale(1) contrast(0.3) blur(0.5px) brightness(1.2); }
+
+.credits {
+  font-size: 1rem; }
 
 .hide {
   display: none; }

@@ -23,38 +23,24 @@ $body-size: 20px;
 @import "./node_modules/bulma/sass/layout/_all";
 
 .title {
-  &.is-1 {
-    font-family: $raleway;
-  }
-  &.is-5 {
-    font-weight: lighter;
-  }
+  &.is-1 { font-family: $raleway; }
+  &.is-5 { font-weight: lighter; }
 }
 
 .subtitle {
-  &.is-2 {
-    font-family: $raleway;
-  }
+  &.is-2 { font-family: $raleway; }
 }
 
-i[class^="devicon"] {
-  font-size: 3em;
-}
+i[class^="devicon"] { font-size: $size-1; }
 
-section:nth-of-type(even) {
-  background-color: $background;
-}
+section:nth-of-type(even) { background-color: $background }
 
 .icon.is-large {
   margin: 0 10px;
- .fa {
-  font-size: 60px;
- }
+ .fa { font-size: $size-1; }
  a {
    color: $grey-darker;
-   &:hover {
-     color: $grey;
-   }
+   &:hover { color: $grey; }
  }
 }
 
@@ -65,8 +51,23 @@ section:nth-of-type(even) {
 .footer {
   background-color: $grey-darker;
   color: white;
-  a:hover {
-    color: darken($primary, 30%);
+  a:hover { color: darken($primary, 30%); }
+}
+
+.navbar {
+  .navbar-burger {
+    span { background-color: $primary; }
+    &:hover {
+      background-color: $primary;
+      span { background-color: white; }
+    }
+  }
+  .navbar-item {
+    color: $primary;
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
   }
 }
 
@@ -78,13 +79,13 @@ section:nth-of-type(even) {
     background-color: $primary;
     z-index: 2;
     opacity: .7;
-    a {
-      z-index: 3;
-    }
+    a { z-index: 3; }
   }
- .past-projects__image {
-   filter: grayscale(1) contrast(.3) blur(.5px) brightness(1.2);
- }
+ .past-projects__image { filter: grayscale(1) contrast(.3) blur(.5px) brightness(1.2); }
+}
+
+.credits {
+  font-size: $size-6;
 }
 
 .hide {
