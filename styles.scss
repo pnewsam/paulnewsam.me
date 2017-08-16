@@ -1,8 +1,27 @@
-@import "node_modules/bulma/sass/layout";
+@import "./node_modules/bulma/sass/utilities/_all";
 
-$header-font: 'Raleway', sans-serif;
-$body-font: 'Roboto', sans-serif;
+$raleway: 'Raleway', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$body-family: $roboto;
+$body-size: 20px;
 
-h1, h2 {
-  font-family: $header-font;
+@import "./node_modules/bulma/sass/base/_all";
+@import "./node_modules/bulma/sass/components/navbar";
+@import "./node_modules/bulma/sass/elements/title";
+@import "./node_modules/bulma/sass/elements/container";
+@import "./node_modules/bulma/sass/grid/_all";
+@import "./node_modules/bulma/sass/layout/_all";
+
+.title {
+  &.is-1, &.is-2 {
+    font-family: $raleway;
+  }
+}
+
+i[class^="devicon"] {
+  font-size: 3em;
+}
+
+section:nth-of-type(even) {
+  background-color: $background;
 }
